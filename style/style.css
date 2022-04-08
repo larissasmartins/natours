@@ -29,8 +29,9 @@ body {
       url('images/background.png');
   background-size: cover;
   background-position: top;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative;
+
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 .header__logo-box {
   position: absolute;
@@ -39,7 +40,8 @@ body {
   border:none;
 } 
 .header__logo {
-  height: 70px;
+  height: 35px;
+  padding: 0 0 0 2.2rem;
 }
 
 .header__text-box {
@@ -51,7 +53,7 @@ body {
 }
  
 .heading-primary {
-  color: white;
+  color: #fff;
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 6rem;
@@ -60,17 +62,19 @@ body {
   display: block;
   font-size: 7.5rem;
   font-weight: 400;
-  letter-spacing: 3.5rem;
+  letter-spacing: 3.6rem;
 
   animation: moveInLeft 2s;
+  animation-duration: 2s;
 }
 .heading-primary--sub {
   display: block;
   font-size: 2.2rem;
   font-weight: 700;
-  letter-spacing: 1.7rem;
+  letter-spacing: 2rem;
 
   animation: moveInRight 2s;
+  animation-duration: 2s;
 }
 
 /*MAIN BUTTON*/
@@ -120,4 +124,39 @@ body {
 .btn--animated {
   animation: moveInUp 1.5s ease-out .60s;
   animation-fill-mode: backwards;
+}
+
+/* ANIMATION BUTTON */
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  80% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+
 }
