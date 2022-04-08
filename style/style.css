@@ -1,5 +1,10 @@
-/*old lavender #685F74 */
-/*grey  #29282962*/
+/*
+COLORS
+
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+*/
 
 *,
 *::after,
@@ -23,10 +28,10 @@ body {
   
   /*MAIN PAGE*/
 .header {
-  height: 90vh;
+  height: 95vh;
   background-image: linear-gradient(
-    to right bottom, #685f741f, #292829ef),
-      url('images/background.png');
+    to right bottom, rgba(40, 180, 133, 0.5), rgba(126, 213, 111, 0.4)),
+      url('../images/background.png');
   background-size: cover;
   background-position: top;
   position: relative;
@@ -61,7 +66,7 @@ body {
 .heading-primary--main {
   display: block;
   font-size: 7.5rem;
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: 3.6rem;
 
   animation: moveInLeft 2s;
@@ -69,7 +74,7 @@ body {
 }
 .heading-primary--sub {
   display: block;
-  font-size: 2.2rem;
+  font-size: 2.3rem;
   font-weight: 700;
   letter-spacing: 2rem;
 
