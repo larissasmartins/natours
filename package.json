@@ -1,0 +1,23 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "web for natours",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss style/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/larissasmartins/oxor-party.git"
+  },
+  "author": "Larissa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/larissasmartins/oxor-party/issues"
+  },
+  "homepage": "https://github.com/larissasmartins/oxor-party#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
+
